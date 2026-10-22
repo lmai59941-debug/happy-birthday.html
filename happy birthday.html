@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071629">
+<title>Happy Birthday, Yaser 💙</title>
+
+<style>
+/* =========================
+   1. WARNA DAN DASAR WEBSITE
+========================= */
+:root {
+  --bg: #071629;
+  --bg-soft: #0b2340;
+  --card: #102b49;
+  --blue: #83d4ff;
+  --blue-soft: #c8edff;
+  --white: #f5f9ff;
+  --muted: #b6cbe0;
+  --border: rgba(131, 212, 255, .2);
+  --radius: 22px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--white);
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button:focus-visible, a:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 4px;
+}
+
+.container {
+  width: min(1080px, 90%);
+  margin-inline: auto;
+}
+
+section {
+  padding: 88px 0;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.eyebrow {
+  display: inline-block;
+  color: var(--blue);
+  font-size: .76rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section-heading h2 {
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  line-height: 1.25;
+  margin: 12px 0;
+}
+
+.section-heading p {
+  color: var(--muted);
+  margin: 0 auto;
+  max-width: 520px;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: linear-gradient(145deg, #112d4b, #0a1e35);
+  box-shadow: 0 18px 45px #00000018;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  min-height: 46px;
+  padding: 11px 20px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  font-weight: 700;
+  transition: transform .2s, background .2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  color: #061629;
+  background: linear-gradient(110deg, #83d4ff, #d5f2ff);
+}
+
+.btn-outline {
+  color: var(--white);
+  border-color: var(--border);
+  background: #ffffff08;
+}
+
+.btn:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* =========================
+   2. NAVIGASI
+========================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(7, 22, 41, .92);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(14px);
+}
+
+.nav-inner {
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  color: var(--blue);
+  font-weight: 900;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 22px;
+}
+
+.nav-links a {
+  font-size: .88rem;
+  color: var(--muted);
+  transition: color .2s;
+}
+
+.nav-links a:hover {
+  color: var(--blue);
+}
+
+/* =========================
+   3. HALAMAN PEMBUKA
+========================= */
+.hero {
+  min-height: 690px;
+  min-height: min(820px, calc(100svh - 68px));
+  display: grid;
+  place-items: center;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  text-align: center;
+  background:
+    radial-gradient(ellipse at 50% 25%, #164e7b88, transparent 52%),
+    linear-gradient(160deg, #0a2340, #071629 75%);
+}
+
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 260px;
+  height: 260px;
+  border: 1px solid #83d4ff15;
+  border-radius: 50%;
+}
+
+.hero::before {
+  top: 10%;
+  left: -130px;
+  box-shadow: 0 0 0 35px #83d4ff06, 0 0 0 70px #83d4ff04;
+}
+
+.hero::after {
+  bottom: -130px;
+  right: -70px;
+  box-shadow: 0 0 0 35px #83d4ff06, 0 0 0 70px #83d4ff04;
+}
+
+.hero-content {
+  width: min(780px, 90%);
+  padding: 65px 0;
+  animation: appear .9s ease both;
+}
+
+.hero-tag {
+  display: inline-block;
+  padding: 7px 15px;
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  color: var(--blue);
+  background: #83d4ff08;
+  font-size: .82rem;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 8.5vw, 6.5rem);
+  line-height: 1.02;
+  letter-spacing: -3px;
+  margin: 27px 0 22px;
+}
+
+.hero h1 span {
+  display: block;
+  color: var(--blue);
+}
+
+.hero-description {
+  max-width: 550px;
+  margin: 0 auto;
+  color: #d0e1f3;
+  font-size: 1.03rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.hero-note {
+  color: #8faac5;
+  font-size: .78rem;
+  margin-top: 35px;
+}
+
+/* =========================
+   4. GALERI FOTO
+========================= */
+.gallery {
+  background: #091a2e;
+}
+
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.photo-card {
+  overflow: hidden;
+  transition: transform .3s, border-color .3s;
+}
+
+.photo-card:hover {
+  transform: translateY(-6px);
+  border-color: #83d4ff70;
+}
+
+.photo-frame {
+  width: 100%;
+  aspect-ratio: 1 / 1.1;
+  overflow: hidden;
+  background: linear-gradient(145deg, #16395b, #0a1a2e);
+  display: grid;
+  place-items: left;
+}
+
+.photo-frame img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+  object-position: left;
+  border-radius: 40px;
+}
+
+.photo-card:hover .photo-frame img {
+  transform: scale(1.04);
+}
+
+.photo-placeholder {
+  padding: 30px;
+  text-align: left;
+  text-align: right;
+  color: var(--blue);
+}
+
+.photo-placeholder span {
+  display: block;
+  font-size: 2rem;
+}
+
+.photo-info {
+  padding: 20px;
+}
+
+.photo-number {
+  font-size: .72rem;
+  color: var(--blue);
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.photo-info h3 {
+  font-size: 1.05rem;
+  margin: 5px 0;
+}
+
+.photo-info p {
+  color: var(--muted);
+  font-size: .9rem;
+  margin: 0;
+}
+
+/* =========================
+   5. SURAT ULANG TAHUN
+========================= */
+.letter-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.letter-card {
+  position: relative;
+  padding: clamp(24px, 6vw, 48px);
+  overflow: hidden;
+}
+
+.letter-card::before {
+  content: "✦";
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  font-size: 5rem;
+  color: #83d4ff0b;
+  pointer-events: none;
+}
+
+.letter-top {
+  color: var(--blue);
+  letter-spacing: 2px;
+  font-size: .78rem;
+  font-weight: 800;
+}
+
+.letter-card h3 {
+  font-family: Georgia, serif;
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  margin: 12px 0 25px;
+}
+
+.letter-card p {
+  color: #d4e3f4;
+  margin: 0 0 18px;
+}
+
+.letter-signature {
+  color: var(--blue) !important;
+  font-weight: 700;
+  margin-top: 28px !important;
+}
+
+.surprise {
+  padding: 18px;
+  margin-top: 50px;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  color: var(--blue-soft);
+  background: #83d4ff0a;
+  animation: appear .5s ease;
+}
+
+.surprise[hidden] {
+  display: none;
+}
+
+/* =========================
+   6. GAME TIGA LEVEL
+========================= */
+.game-section {
+  background:
+    radial-gradient(ellipse at 50% 100%, #123b61, transparent 65%),
+    #091a2e;
+}
+
+.game-card {
+  width: min(720px, 100%);
+  margin: 0 auto;
+  padding: clamp(20px, 5vw, 34px);
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.level-pill,
+.score-pill {
+  padding: 7px 12px;
+  border-radius: 30px;
+  font-size: .8rem;
+  font-weight: 800;
+}
+
+.level-pill {
+  background: #83d4ff17;
+  color: var(--blue);
+  border: 1px solid var(--border);
+}
+
+.score-pill {
+  color: var(--muted);
+  background: #ffffff08;
+}
+
+.progress-track {
+  height: 6px;
+  border-radius: 10px;
+  background: #ffffff12;
+  margin: 22px 0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #348ecb, #9be1ff);
+  transition: width .35s ease;
+}
+
+.level-title {
+  color: var(--blue);
+  font-size: .82rem;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.question {
+  font-size: clamp(1.15rem, 3vw, 1.5rem);
+  font-weight: 750;
+  line-height: 1.5;
+  margin: 8px 0 24px;
+}
+
+.answers {
+  display: grid;
+  gap: 11px;
+}
+
+.answer {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+  padding: 13px 15px;
+  border-radius: 13px;
+  border: 1px solid var(--border);
+  color: var(--white);
+  background: #ffffff05;
+  text-align: left;
+  transition: background .2s, border-color .2s;
+}
+
+.answer:hover:not(:disabled) {
+  background: #83d4ff12;
+  border-color: #83d4ff80;
+}
+
+.answer-letter {
+  display: grid;
+  place-items: center;
+  flex: 0 0 30px;
+  height: 30px;
+  border-radius: 9px;
+  background: #83d4ff13;
+  color: var(--blue);
+  font-size: .82rem;
+  font-weight: 800;
+}
+
+.answer.correct {
+  background: #2bb77b18;
+  border-color: #58d8a1;
+}
+
+.answer.wrong {
+  background: #e75b7018;
+  border-color: #f17c8d;
+}
+
+.answer:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+.feedback {
+  min-height: 65px;
+  padding: 15px 0 5px;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.game-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--border);
+  padding-top: 18px;
+}
+
+.game-footer .btn {
+  font-size: .88rem;
+}
+
+.result {
+  text-align: center;
+  padding: 18px 0;
+  animation: appear .6s ease;
+}
+
+.result-icon {
+  font-size: 3.5rem;
+}
+
+.result h3 {
+  color: var(--blue);
+  font-size: 1.8rem;
+  margin: 8px 0;
+}
+
+.result p {
+  color: var(--muted);
+}
+
+.result[hidden],
+#gamePlay[hidden] {
+  display: none;
+}
+
+/* =========================
+   7. FOOTER DAN ANIMASI
+========================= */
+footer {
+  text-align: center;
+  padding: 32px 15px;
+  border-top: 1px solid var(--border);
+  background: #050f1d;
+}
+
+.footer-brand {
+  color: var(--blue);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+footer p {
+  color: #91a9c1;
+  font-size: .82rem;
+  margin: 7px 0 0;
+}
+
+.heart {
+  position: fixed;
+  bottom: -40px;
+  z-index: 30;
+  pointer-events: none;
+  animation: float-up linear forwards;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float-up {
+  0% { transform: translateY(0) rotate(0); opacity: .75; }
+  100% { transform: translateY(-110vh) rotate(35deg); opacity: 0; }
+}
+
+@media (max-width: 720px) {
+  section { padding: 65px 0; }
+
+  .nav-inner {
+    padding: 12px 0;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 18px;
+  }
+
+  .nav-links a { font-size: .82rem; }
+
+  .hero {
+    min-height: 650px;
+    min-height: 82svh;
+  }
+
+  .hero h1 { letter-spacing: -1.5px; }
+
+  .photo-grid {
+    grid-template-columns: 1fr;
+    max-width: 430px;
+    margin: auto;
+  }
+
+  .photo-frame { aspect-ratio: 4 / 3.5; }
+
+  .game-footer { align-items: stretch; }
+  .game-footer .btn { flex: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGASI -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a class="brand" href="#home">YASER <span aria-hidden="true">💙</span></a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#kenangan">Kenangan</a>
+      <a href="#surat">Surat</a>
+      <a href="#game">Mini Game</a>
+    </div>
+  </div>
+</nav>
+
+<!-- PEMBUKA -->
+<header class="hero" id="home">
+  <div class="hero-content">
+    <span class="hero-tag">✦ A SPECIAL DAY FOR YOU ✦</span>
+
+    <h1>Happy Birthday<span>Yaser. 💙</span></h1>
+
+    <p class="hero-description">
+      Hari istimewa untuk seseorang yang punya tempat
+      tersendiri dalam sebuah cerita. Semoga hari ini
+      membawa banyak senyum dan kenangan indah untuk kamu.
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#surat">Baca Pesan ✉</a>
+      <button class="btn btn-outline" id="musicButton" type="button">▶ Putar Musik</button>
+
+      </button>
+    </div>
+
+    <p class="hero-note">Made with love, just for you.</p>
+  </div>
+</header>
+
+<!-- GALERI -->
+<section class="gallery" id="kenangan">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Our Memories</span>
+      <h2>Di dalam sebuah cerita belum tentu ada foto. Akan tetapi di balik setiap foto, pasti ada cerita. Itulah yang disebut kenangan..</h2>
+      <p>
+        Tidak semua hal indah harus sempurna.
+        Terkadang, kenangan sederhana justru paling berarti.
+      </p>
+    </div>
+
+    <div class="photo-grid">
+      <article class="card photo-card">
+        <div class="photo-frame">
+          <img src="POTO 1.jpeg" alt="Foto Yaser 1">
+        </div>
+        <div class="photo-info">
+          <span class="photo-number">MEMORY 01</span>
+          <h3>A Little Moment</h3>
+          <p>Hal kecil yang menyimpan cerita besar.</p>
+        </div>
+      </article>
+
+      <article class="card photo-card">
+        <div class="photo-frame">
+          <img src="POTO 2.jpeg" alt="Foto Yaser ">
+        </div>
+        <div class="photo-info">
+          <span class="photo-number">MEMORY 02</span>
+          <h3>A Beautiful Story</h3>
+          <p>Kenangan yang punya arti tersendiri.</p>
+        </div>
+      </article>
+
+      <article class="card photo-card">
+        <div class="photo-frame">
+          <img src="POTO 3.jpeg" alt="Foto Yaser 3">
+        </div>
+        <div class="photo-info">
+          <span class="photo-number">MEMORY 03</span>
+          <h3>Always Remember</h3>
+          <p>Satu foto, sejuta cerita.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SURAT -->
+<section id="surat">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">A Letter For You</span>
+      <h2>Sebuah Pesan Kecil 💌</h2>
+      <p>Untuk dibaca di hari istimewamu.</p>
+    </div>
+
+    <div class="letter-wrap">
+      <article class="card letter-card">
+        <div class="letter-top">HI YASER, THIS IS FROM MAILAN FORYOU</div>
+        <h3>Happy Birthday! ✨</h3>
+
+        <p>
+          Selamat ulang tahun, Yaser. Semoga di usia yang baru
+          ini kamu selalu diberi kesehatan, hati yang tenang,
+          langkah yang dimudahkan, dan banyak alasan untuk bahagia.
+        </p>
+
+        <p>
+          Semoga semua impian yang sedang kamu perjuangkan
+          perlahan menemukan jalannya. Tidak harus selalu
+          berjalan sempurna, yang penting kamu tetap berani
+          mencoba dan percaya pada prosesmu sendiri.
+        </p>
+
+        <p>
+          Terima kasih sudah menjadi bagian dari cerita dan
+          kenangan yang berarti. Semoga hari-hari ke depan
+          membawa hal-hal baik yang tidak pernah kamu sangka.
+        </p>
+
+        <p>
+          Semoga kamu selalu dikelilingi orang-orang yang tulus,
+          diberi kekuatan ketika lelah, dan menemukan kebahagiaan
+          bahkan dari hal-hal yang sederhana.
+        </p>
+
+        <p class="letter-signature">
+          With all the best wishes, for you. 💙
+        </p>
+
+        <button class="btn btn-primary" id="surpriseButton" type="button">
+          Buka Kejutan 🎁
+        </button>
+        
+<div class="pesan-suara">
+  <h3>💌 Ini adalah Pesan Spesial Untukmu</h3>
+  <p>Ini dibuat dengan ikhlas yaa wok</p>
+
+  <audio controls preload="metadata">
+  <source src="rekaman mai.mp4" type="audio/mp4">
+  Browser kamu tidak mendukung pemutar audio ini.
+</audio>
+</div>
+
+<style>
+.pesan-suara {
+  background: #82b7ef;
+  color: #142d50;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 350px;
+}
+.pesan-suara audio {
+  width: 100%;
+  margin-top: 15px;
+}
+</style>
+
+
+        <div class="surprise" id="surprise" hidden aria-live="polite">
+          ✨ Semoga satu per satu doa baikmu menjadi nyata.
+          Tetaplah menjadi dirimu sendiri, terus bertumbuh,
+          dan jangan lupa menikmati perjalanan hidupmu.
+          Happy birthday sekali lagi yaa, Yaaaaaaaaseeeeeerrrrrrrrrr! 💙
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- GAME -->
+<section class="game-section" id="game">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Play & Remember</span>
+      <h2>Main Game Tebak-Tebakan Yuk 🎮</h2>
+      <p>
+        Tiga level, sembilan pertanyaan, dan satu pesan
+        spesial di akhir permainan.
+      </p>
+    </div>
+
+    <div class="card game-card">
+      <div id="gamePlay">
+        <div class="game-header">
+          <span class="level-pill" id="levelLabel">LEVEL 1 / 3</span>
+          <span class="score-pill" id="scoreLabel">Skor: 5</span>
+        </div>
+
+        <div class="progress-track"
+             role="progressbar"
+             aria-label="Progres permainan"
+             aria-valuemin="0"
+             aria-valuemax="9"
+             aria-valuenow="0"
+             id="progressTrack">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div class="level-title" id="levelTitle">LEVEL 1 — WARM UP</div>
+        <div class="question" id="question" aria-live="polite"></div>
+        <div class="answers" id="answers"></div>
+        <div class="feedback" id="feedback" aria-live="polite"></div>
+
+        <div class="game-footer">
+          <button class="btn btn-outline" id="restartButton" type="button">
+              ↻ Ulangi
+          </button>
+          <button class="btn btn-primary" id="nextButton" type="button" disabled>
+            Berikutnya →
+          </button>
+        </div>
+      </div>
+
+      <div class="result" id="result" hidden aria-live="polite">
+        <div class="result-icon">🎉💙</div>
+        <h3>Good Game!</h3>
+        <p id="finalScore"></p>
+        <p>
+
+          Ini hadiah kecil untukmu: Semoga kamu selalu punya keberanian untuk bermimpi setinggi mungkin dan berkeyakinan untuk mewujudkannya. Semoga kamu diberikan kekuatan untuk terus melangkah, bahkan ketika keadaan tidak berjalan sesuai harapan. Jangan takut gagal, jangan mudah menyerah, dan jangan pernah meragukan kemampuan dirimu sendiri. Percayalah, setiap usaha yang kamu lakukan hari ini akan membawamu lebih dekat pada apa yang kamu impikan..
+        </p>
+        <button class="btn btn-primary" id="playAgainButton" type="button">
+          Main Lagi ↻
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-brand">HAPPY BIRTHDAY, YASER 💙</div>
+  <p>Dibuat dengan sepenuh hati · A day to remember</p>
+</footer>
+
+<!-- GANTI NAMA FILE INI JIKA MUSIKMU BERBEDA -->
+<audio id="birthdayMusic" loop preload="auto">
+  <source src="shape of my heart.mp3" type="audio/mp3">
+</audio>
+
+<script>
+/* =========================
+   1. DATA GAME
+   Kamu bisa mengganti pertanyaan dan jawabannya di sini.
+========================= */
+const levels = [
+  {
+    title: "LEVEL 1 — WARM UP",
+    description: "Mulai dengan pertanyaan ringan.",
+    questions: [
+      {
+        question: "Apa yang paling penting saat merayakan ulang tahun?",
+        answers: [
+          "Hadiah yang paling mahal",
+          "Doa dan perhatian yang tulus",
+          "Pesta paling besar",
+          "Banyaknya tamu"
+        ],
+        correct: 1,
+        explanation: "Doa dan perhatian yang tulus adalah hadiah yang bermakna. 💙"
+      },
+      {
+        question: "Apa yang membuat kenangan terasa istimewa bagi kamu?",
+        answers: [
+          "Harganya",
+          "Tempatnya harus mewah",
+          "Makna dan orang di dalamnya",
+          "Harus viral"
+        ],
+        correct: 2,
+        explanation: "Sebuah kenangan berharga karena ada orang yang dicintai di dalamnya."
+      },
+      {
+        question: "Apa harapan terbaik di hari ulang tahun kamu?",
+        answers: [
+          "Selalu sehat banyak rezeki dan bahagia",
+          "Tidak pernah bertambah usia",
+          "Selalu menang",
+          "Tidak pernah menghadapi tantangan"
+        ],
+        correct: 0,
+        explanation: "Kesehatan dan kebahagiaan adalah harapan yang berharga."
+      }
+    ]
+  },
+  {
+    title: "LEVEL 2 — DEEPER MOMENTS",
+    description: "Saatnya berpikir sedikit lebih dalam.",
+    questions: [
+      {
+        question: "Jika Kamu merasa berat atau ada masalah kamu biasanya bercerita sama siapa sih?",
+        answers: [
+          "Keluarga",
+          "Teman-Teman",
+          "Orang yang kamu cintai",
+          "Mantan"
+        ],
+        correct: 2,
+        explanation: "Wah pilihan nya gasalah, apa jangan-jangan tadi pengen pilih mantan ya wkwk"
+      },
+      {
+        question: "Apa yang membantu hubungan menjadi lebih sehat?",
+        answers: [
+          "Selalu harus sepakat",
+          "Tidak pernah berbicara",
+          "Saling menghargai dan berkomunikasi",
+          "Saling menguji"
+        ],
+        correct: 2,
+        explanation: "Komunikasi dan rasa hormat membantu hubungan tumbuh."
+      },
+      {
+        question: "Hadiah apa yang tidak harus dibeli dengan uang?",
+        answers: [
+          "Jam tangan",
+          "Sepatu",
+          "Ponsel",
+          "Waktu dan perhatian"
+        ],
+        correct: 3,
+        explanation: "Waktu dan perhatian yang tulus juga merupakan hadiah."
+      }
+    ]
+  },
+  {
+    title: "LEVEL 3 — FINAL CHALLENGE",
+    description: "Level terakhir sebelum membuka hadiah!",
+    questions: [
+      {
+        question: "Apa yang sebaiknya dilakukan untuk meraih impian?",
+        answers: [
+          "Menunggu tanpa mencoba",
+          "Mulai melangkah dan belajar",
+          "Takut mencoba selamanya",
+          "Menyerah sebelum mulai"
+        ],
+        correct: 1,
+        explanation: "Langkah kecil yang konsisten bisa membawa perubahan besar."
+      },
+      {
+        question: "Apa arti kenangan yang berharga?",
+        answers: [
+          "Sesuatu yang harus selalu sempurna",
+          "Sesuatu yang harus mahal",
+          "Pengalaman yang punya makna",
+          "Sesuatu yang harus dipamerkan"
+        ],
+        correct: 2,
+        explanation: "Setiap kenangan berharga punya makna tersendiri."
+      },
+      {
+        question: "Apa yang paling layak kamu dapatkan dalam hidup?",
+        answers: [
+          "Kesempatan untuk tumbuh dan bahagia",
+          "Tekanan untuk selalu sempurna",
+          "Keharusan menyenangkan semua orang",
+          "Larangan untuk bermimpi"
+        ],
+        correct: 0,
+        explanation: "Kamu layak memiliki kesempatan untuk tumbuh dan bahagia. 💙"
+      }
+    ]
+  }
+];
+
+/* =========================
+   2. LOGIKA PERMAINAN
+========================= */
+let currentLevel = 0;
+let currentQuestion = 0;
+let score = 0;
+let answered = false;
+
+const $ = id => document.getElementById(id);
+
+function renderQuestion() {
+  answered = false;
+
+  const level = levels[currentLevel];
+  const item = level.questions[currentQuestion];
+  const number = currentLevel * 3 + currentQuestion;
+
+  $("levelLabel").textContent = `LEVEL ${currentLevel + 1} / 3`;
+  $("scoreLabel").textContent = `Skor: ${score}`;
+  $("levelTitle").textContent = level.title;
+  $("question").textContent = item.question;
+  $("feedback").textContent = "";
+  $("nextButton").disabled = true;
+
+  $("progressFill").style.width = `${number / 9 * 100}%`;
+  $("progressTrack").setAttribute("aria-valuenow", number);
+
+  $("nextButton").textContent =
+    number === 8 ? "Lihat Hadiah 🎁" :
+    currentQuestion === 2 ? "Level Berikutnya →" :
+    "Berikutnya →";
+
+  const answers = $("answers");
+  answers.replaceChildren();
+
+  item.answers.forEach((answer, index) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "answer";
+
+    const letter = document.createElement("span");
+    letter.className = "answer-letter";
+    letter.textContent = String.fromCharCode(65 + index);
+
+    const text = document.createElement("span");
+    text.textContent = answer;
+
+    button.append(letter, text);
+    button.addEventListener("click", () => chooseAnswer(index));
+    answers.appendChild(button);
+  });
+}
+
+function chooseAnswer(choice) {
+  if (answered) return;
+  answered = true;
+
+  const item = levels[currentLevel].questions[currentQuestion];
+  const buttons = $("answers").querySelectorAll("button");
+
+  buttons.forEach((button, index) => {
+    button.disabled = true;
+
+    if (index === item.correct) {
+      button.classList.add("correct");
+    }
+  });
+
+  if (choice === item.correct) {
+    score += 10;
+    $("feedback").textContent = "✓ Benar! " + item.explanation;
+    createHearts(3);
+  } else {
+    buttons[choice].classList.add("wrong");
+    $("feedback").textContent = "Belum tepat. " + item.explanation;
+  }
+
+  $("scoreLabel").textContent = `Skor: ${score}`;
+  $("nextButton").disabled = false;
+}
+
+function nextQuestion() {
+  if (!answered) return;
+
+  if (currentQuestion < 2) {
+    currentQuestion++;
+  } else if (currentLevel < 2) {
+    currentLevel++;
+    currentQuestion = 0;
+  } else {
+    showResult();
+    return;
+  }
+
+  renderQuestion();
+}
+
+function showResult() {
+  $("gamePlay").hidden = true;
+  $("result").hidden = false;
+  $("finalScore").textContent =
+    `Skor akhir: ${score} dari 90 poin. Terima kasih sudah bermain!`;
+
+  $("progressFill").style.width = "100%";
+  $("progressTrack").setAttribute("aria-valuenow", "9");
+  createHearts(20);
+}
+
+function restartGame() {
+  currentLevel = 0;
+  currentQuestion = 0; x
+  score = 0;
+
+  $("gamePlay").hidden = false;
+  $("result").hidden = true;
+
+  renderQuestion();
+}
+
+$("nextButton").addEventListener("click", nextQuestion);
+$("restartButton").addEventListener("click", restartGame);
+$("playAgainButton").addEventListener("click", restartGame);
+
+/* =========================
+   3. KEJUTAN SURAT
+========================= */
+$("surpriseButton").addEventListener("click", () => {
+  $("surprise").hidden = false;
+  $("surpriseButton").hidden = true;
+  createHearts(12);
+});
+
+/* =========================
+   4. MUSIK
+========================= */
+const music = $("birthdayMusic");
+
+$("musicButton").addEventListener("click", async () => {
+  const button = $("musicButton");
+
+  if (music.paused) {
+    try {
+      await music.play();
+      button.textContent = "❚❚ Jeda Musik";
+    } catch (error) {
+      alert(
+        "Musik belum bisa diputar. Periksa nama dan lokasi file musik di folder website."
+      );
+    }
+  } else {
+    music.pause();
+    button.textContent = "▶ Putar Musik";
+  }
+});
+
+music.addEventListener("ended", () => {
+  $("musicButton").textContent = "▶ Putar Musik";
+});
+
+/* =========================
+   5. ANIMASI HATI
+========================= */
+function createHearts(amount = 1) {
+  const symbols = ["♡", "💙", "✦"];
+
+  for (let i = 0; i < amount; i++) {
+    const heart = document.createElement("span");
+    heart.className = "heart";
+    heart.setAttribute("aria-hidden", "true");
+    heart.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+    heart.style.left = `${Math.random() * 100}vw`;
+    heart.style.fontSize = `${14 + Math.random() * 13}px`;
+    heart.style.color = "#83d4ff";
+    heart.style.animationDuration = `${5 + Math.random() * 3}s`;
+
+    document.body.appendChild(heart);
+    heart.addEventListener("animationend", () => heart.remove(), { once: true });
+  }
+}
+
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  setInterval(() => createHearts(1), 2400);
+}
+
+/* MULAI GAME */
+renderQuestion();
+</script>
+
+
+<!-- BAGIAN PERMINTAAN MAAF -->
+<section class="sorry-section">
+  <div class="sorry-card">
+    <div class="sorry-heart">🤍</div>
+
+    <h2>Terakhir, Ada Sesuatu yang Ingin Kusampaikan</h2>
+
+    <p>
+      Serrr, sebelum kamu menutup halaman ini,
+      ada satu hal yang ingin aku sampaikan.
+    </p>
+
+    <p>
+      Maaf ya, serr, aku cuma bisa kasih ini. Mungkin apa yang aku buat belum seberapa, 
+      Tapi, aku membuat semuanya dengan tulus, dengan harapan sederhana bisa bikin kamu tersenyum dan bahagia, meskipun cuma sebentar.
+      Maaf kalau aku belum bisa memberikan sesuatu yang lebih,
+      Aku sadar, sesuatu yang sederhana ini mungkin nggak sebanding dengan apa yang seharusnya kamu dapatkan.
+    </p>
+
+    <p>
+      Apa pun yang terjadi ke depannya, aku berharap kamu selalu
+      diberi kebahagiaan, kekuatan, dan kemudahan dalam meraih
+      semua hal yang kamu impikan.
+    </p>
+
+    <p class="sorry-ending">
+      Sekali lagi, maaf untuk segala kekurangannya, ya, serr.
+      Semoga kamu bisa terus belajar menjadi lebih baik,
+      tanpa harus kehilangan hal-hal baik yang pernah kamu punya.
+    </p>
+
+    <div class="sorry-signature">
+      Dari Mailan, untukmu. ♡
+    </div>
+  </div>
+</section>
+
+<style>
+.sorry-section {
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #0b162b, #163356);
+  color: #f8f4ed;
+  text-align: center;
+  font-family: Georgia, serif;
+}
+
+.sorry-card {
+  max-width: 650px;
+  margin: auto;
+  padding: 35px 28px;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 22px;
+  background: rgba(255,255,255,0.07);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+  animation: sorryFade 1.5s ease both;
+}
+
+.sorry-heart {
+  font-size: 42px;
+  margin-bottom: 15px;
+  animation: sorryPulse 2s infinite;
+}
+
+.sorry-card h2 {
+  font-size: 27px;
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+
+.sorry-card p {
+  font-size: 16px;
+  line-height: 1.9;
+  margin: 18px 0;
+  color: #eee9e2;
+}
+
+.sorry-ending {
+  font-style: italic;
+}
+
+.sorry-signature {
+  margin-top: 30px;
+  color: #d9c5a1;
+  font-size: 17px;
+}
+
+@keyframes sorryFade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sorryPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+}
+</style>
+</body>
+
+</body>
+</html>
